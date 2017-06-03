@@ -1,3 +1,7 @@
+/* ---- header ---- */
+div {
+  display: block;
+}
 header {
   display: flex;
   align-items: center;
@@ -5,11 +9,11 @@ header {
   z-index: 1;
   width: 100%;
   height: 80px;
-  border-bottom 1px solid black;
-  background-color: white;
   font-family: Verdana;
   font-size: 14px;
   font-weight: bold;
+  border-bottom 2px solid black;
+  background-color: white;
 }
 
 .logo {
@@ -24,13 +28,46 @@ header {
   padding-left: 10px;
 }
 
-nav {
+header nav {
   padding-right: 40px;
+  display: block;
 }
 nav span {
   display: inline-block;
   padding: 20px 10px;
 }
-header a {
+a {
   color: black;
+}
+
+/* ---- footer ---- */
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 325px;
+  background-color: MediumAquamarine;
+  margin: auto;
+  font-family: Verdana;
+  font-size: 12px;
+}
+
+footer nav {
+  display: inline-block;
+  padding-left: 25px;
+}
+.info {
+  display: inline-flex;
+}
+
+footer .title {
+  display: inline-block;
+  padding-right: 25px;
+  border-right: 2px solid white;
+  font-family: Georgia;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
 }
