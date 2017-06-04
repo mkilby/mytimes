@@ -1,4 +1,4 @@
-/* ---- header ---- */
+/* ----------------------- header ----------------------- */
 div {
   display: block;
 }
@@ -12,7 +12,7 @@ header {
   font-family: Verdana;
   font-size: 14px;
   font-weight: bold;
-  border-bottom 2px solid black;
+  border-bottom: 2px solid black;
   background-color: white;
 }
 
@@ -38,9 +38,98 @@ nav span {
 }
 a {
   color: black;
+  padding: 0px 10px;
+}
+/* ----------------------- main content ----------------------- */
+.content {
+  display: flex;
+  width: 1232px;
+  margin: 0 auto 70px auto;
+  padding-top: 116px;
+  border: 3px solid purple;
+}
+/* ----- first news column ------*/
+.column.large {
+  width: 630px;
+  display: flex;
+  border: 2px solid purple;
+
+}
+.column.medium {
+  width: 300px;
+  display: flex;
+  border: 2px solid purple;
+
+}
+.column.small {
+  width: 240px;
+  display: flex;
+  border: 1px solid purple;
 }
 
-/* ---- footer ---- */
+.column {
+  display: flex;
+  flex-direction: column;
+  margin-right: 32px;
+}
+
+.lead_story .image_content {
+  background-image: url("../images/img-story-main.png");
+  width: 630px;
+  margin-top: 0;
+  font-size: 40px;
+  text-align: left;
+}
+.lead_story .image_content span {
+  margin-left: 20px;
+}
+.image_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 300px;
+  margin-top: 15px;
+  font-family: Georgia;
+  font-size: 30px
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
+.narrative {
+  margin-top: 16px;
+}
+
+.stories {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 17px;
+}
+.story {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  border: 1px solid purple;
+}
+.stories .text-content {
+  height: 250px;
+}
+h2 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: Georgia;
+  font-size: 30px;
+  font-weight: bold;
+  font-style: normal;
+}
+.fall-cancelled.image-content {
+  background-image: url("../images/img-story-2.png");
+}
+.pop-culture.image-content {
+  /* --- HIDE for now
+  background-image: url("../images/img-story-3.png");
+  ---- */
+}
+/* ----------------------- footer ----------------------- */
 footer {
   display: flex;
   align-items: center;
@@ -58,6 +147,7 @@ footer nav {
   display: inline-block;
   padding-left: 25px;
 }
+
 .info {
   display: inline-flex;
 }
@@ -70,4 +160,10 @@ footer .title {
   font-size: 16px;
   font-weight: bold;
   color: white;
+  font-weight: bold;
+}
+.copyright {
+  display: block;
+  padding: 40px 40px;
+  border: 1px solid white;
 }
