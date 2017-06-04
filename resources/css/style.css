@@ -56,10 +56,6 @@ a {
   width: 300px;
   display: flex;
 }
-.column.small {
-  width: 240px;
-  display: flex;
-}
 
 .column {
   display: flex;
@@ -125,6 +121,30 @@ h2 {
   font-weight: bold;
   font-style: normal;
 }
+
+.column_small {
+  width: 240px;
+  display: flex;
+  flex-direction: column;
+}
+
+.news-bites h3 {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 41px;
+}
+
+.news-bites .bite {
+  display: block;
+  padding: 11px 20px;
+  background-color: WhiteSmoke;
+  font-family: Verdana;
+  font-size: 12px;
+  color: DimGray;
+  border-bottom: 1px solid black;
+}
+
 
 /* ----------------------- footer ----------------------- */
 footer {
