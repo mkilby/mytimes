@@ -8,7 +8,7 @@ header {
   position: fixed;
   z-index: 1;
   width: 100%;
-  height: 80px;
+  height: 82px;
   font-family: Verdana;
   font-size: 14px;
   font-weight: bold;
@@ -46,7 +46,6 @@ a {
   width: 1232px;
   margin: 0 auto 70px auto;
   padding-top: 116px;
-  border: 3px solid purple;
 }
 /* ----- first news column ------*/
 .column.large {
@@ -80,8 +79,14 @@ a {
   font-size: 40px;
   text-align: left;
 }
-.lead_story .image_content span {
-  margin-left: 20px;
+.fall-cancelled .image_content {
+  background-image: url("images/img-story-2.png");
+}
+.pop-culture .image_content {
+  background-image: url("../images/img-story-3.png");
+}
+.cat_ceo .image_content {
+  background-image: url("../images/img-story-1.png");
 }
 .image_content {
   display: flex;
@@ -90,11 +95,16 @@ a {
   height: 300px;
   margin-top: 15px;
   font-family: Georgia;
-  font-size: 30px
+  font-size: 30px;
   font-weight: bold;
   color: white;
   text-align: center;
+  background-color: lightBlue;
 }
+.lead_story .image_content span {
+  margin-left: 20px;
+}
+
 .narrative {
   margin-top: 16px;
 }
@@ -121,14 +131,7 @@ h2 {
   font-weight: bold;
   font-style: normal;
 }
-.fall-cancelled.image-content {
-  background-image: url("../images/img-story-2.png");
-}
-.pop-culture.image-content {
-  /* --- HIDE for now
-  background-image: url("../images/img-story-3.png");
-  ---- */
-}
+
 /* ----------------------- footer ----------------------- */
 footer {
   display: flex;
